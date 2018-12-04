@@ -1,0 +1,21 @@
+环境配置要求：
+    依赖：
+	    Python 3.6
+		Python opencv
+		TensorFlow 1.8.0 至少大于等于1.6.0
+		本代码使用了tensorpack库 故需要安装tensorpack：pip install --upgrade git+https://github.com/tensorpack/tensorpack.git
+		安装pycocotools: pip install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+		其他依赖：tqdm，numpy，matplotlib，pandas
+
+操作顺序：
+	更改运行脚本train_11_5中的读取路径：
+	先更改67，68，72行的文件路径：intensity_path='to/your/intensity_files'
+								  pts_path='to/your/pts_files'
+								  upload_path='to/your/upload_csv_file'
+	
+	打开终端进入配置好的环境再进入本复现代码文件夹：
+		输入命令：python train_11_5.py --predict /to/your/pts_files/ --load /your/path/to/FasterRCNN/train_log/maskrcnn1/model-1960000.data-00000-of-00001 --config MODE_MASK=False MODE_FPN=True BACKBONE.WEIGHTS=/your/path/to/FasterRCNN/ImageNet-R101-AlignPadding.npz
+		示例：python train_11_5.py --predict /media/wrc/DCFfusai/dianyun/pts_2/ --load /media/wrc/CCFtijiao/FasterRCNN/train_log/maskrcnn1/model-1960000.data-00000-of-00001 --config MODE_MASK=False MODE_FPN=True BACKBONE.WEIGHTS=/media/wrc/CCFtijiao/FasterRCNN/ImageNet-R101-AlignPadding
+	
+	在文件夹中的upload文件夹中得到结果文件
+	

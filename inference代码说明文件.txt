@@ -1,0 +1,17 @@
+文件夹说明：
+	train_log/maskrcnn1:存放训练好的权重 model-1960000.data-00000-of-00001
+	upload:存放生成的csv结果文件
+	utils：存放代码运行使用的函数
+	
+文件说明：复现代码只需要改动 train_11_5.py文件
+更改67，68，72行的文件路径：intensity_path='to/your/intensity_files'
+								  pts_path='to/your/pts_files'
+								  upload_path='to/your/upload_csv_file'
+		主要关注496行的predict函数：
+			1.先读入赛方提供的csv文件，转化为数组后开始计时。
+			2.将读入的pts，intensity数据转化为类似图片的数组结构，用图片检测的思路进行检测
+			3.将得到的results转换为要求提交的格式得到每个像素所对应的类别，568行 out[index]=label，计时结束
+			4.将结果存入csv
+			
+			
+	
