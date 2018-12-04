@@ -5,8 +5,9 @@
 ## 赛题 自动驾驶三维点云分割
 -------------------------------------------
 ### 比赛链接：https://www.datafountain.cn/competitions/314/details/rule
-### 百度云盘下载链接:
-### 数据集解释：将maskrcnn文件夹放入FaterRCNN/train_log下,将ImageNet-R101-AlignPadding放入FasterRCNN下，本训练代码参考：https://github.com/tensorpack/tensorpack/tree/master/examples/FasterRCNN
+### 百度云盘下载链接（权重下载链接）：链接：https://pan.baidu.com/s/1ZwvoH2lRghaknokNe-u8yA  提取码：2nz0 
+### 数据集解释：由于本次的数据集超过100G，无法上传百度云，这里我们只取了几个数据作为sample，应该可以使用训练赛数据集作为替代：https://www.datafountain.cn/competitions/326/details
+### 训练权重：将maskrcnn文件夹放入FaterRCNN/train_log下,将ImageNet-R101-AlignPadding放入FasterRCNN下，本训练代码参考：https://github.com/tensorpack/tensorpack/tree/master/examples/FasterRCNN
 
 #### 1.数据预处理：
 ##### 官方提供了pts，intensity，category三类点云数据，我们这里参考了Complex-YOLO: Real-time 3D Object Detection on Point Clouds的思路将三类点云数据分别归一化到0~1的范围后重组为三通道图片数组，作为我们的训练图像。我们的图片和标签制作过程详见代码making_training_data/pointcloud2RGB.py
