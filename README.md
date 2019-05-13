@@ -8,7 +8,7 @@
 #### https://www.datafountain.cn/competitions/314/details/rule
 
 ### 百度云盘下载链接（权重下载链接）：
-#### 链接：https://pan.baidu.com/s/1ZwvoH2lRghaknokNe-u8yA  提取码：2nz0 
+#### https://pan.baidu.com/s/1h57oE6VmXJQOMgWqEAejsw 提取码 0vw0
 
 ### 数据集解释：
 #### 由于本次的数据集超过100G，无法上传百度云，这里我们只取了几个数据作为sample，应该可以使用训练赛数据集作为替代：https://www.datafountain.cn/competitions/326/details
