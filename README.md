@@ -1,3 +1,20 @@
+# 2018 CCF BDCI Alibaba 3D Point Cloud Segmentation
+
+This repository contains a public reference implementation for the 2018 CCF BDCI Alibaba autonomous-driving 3D point-cloud segmentation competition. It documents the fourth-place final-round solution, including LiDAR point-cloud preprocessing, BEV-style three-channel image generation, VOC/COCO data conversion, Faster R-CNN training/inference code, sample data, and reproduction notes.
+
+## Current Maintenance Status
+
+This is a legacy competition codebase being revived for reproducibility, education, and long-term open-source maintenance. The original training pipeline depends on older TensorFlow/tensorpack-era tooling, and the released model weights are no longer available. The repository therefore focuses on preserving the data-processing and modeling workflow, documenting the original assumptions, and modernizing the project step by step.
+
+See [ROADMAP.md](ROADMAP.md) for the planned maintenance work, including Docker packaging, CI smoke tests, dependency updates, reproducibility checks, and bilingual documentation.
+
+## Data and Weight Availability
+
+- Sample training data is included under `sample_train_data/`.
+- The original full competition dataset was larger than 100 GB and is not redistributed in this repository.
+- The original Baidu Netdisk model-weight link is no longer valid, so users should retrain the model or adapt the scripts to their own data.
+- The code and documentation are intended as a reproducible baseline and educational reference for LiDAR/BEV perception workflows.
+
 # 2018-BDCI---top5
 ======================================
 # 主办方：中国计算机学会 & DataFountain & 阿里巴巴
@@ -46,5 +63,4 @@
 -------------------------------------------------------------------------------------------------------------------------------------
 ### 知乎链接：https://zhuanlan.zhihu.com/p/51508500 
 ### 我们正在联系第一名的团队争取把他们的方案的中文git版本做出来
-
 
