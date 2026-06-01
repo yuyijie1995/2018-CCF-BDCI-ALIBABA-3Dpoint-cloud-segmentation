@@ -1,0 +1,17 @@
+Third-Party Notices
+===================
+
+Unless a file or directory states otherwise, original project code and
+documentation in this repository are released under the MIT License.
+
+Some components are adapted from or copied from third-party open-source
+projects and retain their original license notices:
+
+- The Faster R-CNN training code is based on tensorpack's Faster R-CNN example,
+  as documented in `README.md`.
+- `FasterRCNN/utils/generate_anchors.py` is copied from py-faster-rcnn.
+- `FasterRCNN/utils/box_ops.py` and `FasterRCNN/utils/np_box_ops.py` are adapted
+  from or copied from the TensorFlow Object Detection API.
+
+See file-level headers and `FasterRCNN/utils/README.md` for source-specific
+notices.
